@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <TableRow>
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_rock" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_country" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_pop" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_electronic" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_latin" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_metal" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_classical" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:text="@string/gender_hiphop" />
+    </TableRow>
+
+</TableLayout>

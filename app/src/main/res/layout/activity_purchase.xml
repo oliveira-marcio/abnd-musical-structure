@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="udacity.android.basics.com.musicalstructure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="@dimen/purchase_image_size"
+                android:layout_height="@dimen/purchase_image_size"
+                android:src="@drawable/album_placeholder" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    style="@style/purchase_title_label"
+                    android:text="@string/main_music_title" />
+
+                <TextView
+                    style="@style/purchase_details_label"
+                    android:text="@string/main_music_author" />
+
+                <TextView
+                    style="@style/purchase_details_label"
+                    android:text="@string/purchase_album" />
+
+                <TextView
+                    style="@style/purchase_details_label"
+                    android:text="@string/purchase_gender" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/purchase_title_label"
+            android:text="@string/purchase_album_contents" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track1" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track2" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track3" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track4" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track5" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track6" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track7" />
+
+        <TextView
+            style="@style/purchase_details_label"
+            android:text="@string/purchase_album_track8" />
+
+        <Button
+            android:id="@+id/button_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="@string/purchase_button" />
+
+    </LinearLayout>
+</ScrollView>

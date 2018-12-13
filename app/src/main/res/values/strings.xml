@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+
+    <!-- Action bar buttons labels -->
+    <string name="challenge_label">Challenges</string>
+    <string name="settings_label">Settings</string>
+    <string name="store_label">Store</string>
+    <!-- Challenge fragment button -->
+    <string name="challenge_button">Fechar</string>
+
+    <!-- Main screen various labels -->
+    <string name="main_release_label">New releases</string>
+    <string name="main_most_played_label">Most played</string>
+    <string name="main_last_played_label">Last played</string>
+    <string name="main_album_1">Album 1</string>
+    <string name="main_album_2">Album 2</string>
+    <string name="main_music_title">Name of some music</string>
+    <string name="main_music_author">Famous Author</string>
+
+    <!-- Library screen various labels -->
+    <string name="library_album_label">Internal storage</string>
+    <string name="library_file_label">Music files</string>
+
+    <!-- Music screen playlist label -->
+    <string name="playlist_label">Playlist</string>
+
+    <!-- Store screen various labels -->
+    <string name="store_top_label">Top albuns</string>
+    <string name="store_gender_label">Gender:</string>
+
+    <!-- Purchase screen various labels -->
+    <string name="purchase_album">Album\'s Name</string>
+    <string name="purchase_gender">Rock (2015)</string>
+    <string name="purchase_album_contents">Album tracks:</string>
+    <string name="purchase_button">Buy ($19.99)</string>
+
+    <!-- Purchase album tracks -->
+    <string name="purchase_album_track1">1) Name of another song - Another Famous</string>
+    <string name="purchase_album_track2">2) Name of another song - Another Famous</string>
+    <string name="purchase_album_track3">3) Name of another song - Another Famous</string>
+    <string name="purchase_album_track4">4) Name of another song - Another Famous</string>
+    <string name="purchase_album_track5">5) Name of another song - Another Famous</string>
+    <string name="purchase_album_track6">6) Name of another song - Another Famous</string>
+    <string name="purchase_album_track7">7) Name of another song - Another Famous</string>
+    <string name="purchase_album_track8">8) Name of another song - Another Famous</string>
+
+    <!-- Purchase Toast message -->
+    <string name="purchase_message">Thank you for buying. Download started.</string>
+
+    <!-- Gender values for spinners on Store and Setting screens -->
+    <string name="gender_rock">Rock</string>
+    <string name="gender_pop">Pop</string>
+    <string name="gender_latin">Latin</string>
+    <string name="gender_classical">Classical</string>
+    <string name="gender_country">Country</string>
+    <string name="gender_electronic">Electronic</string>
+    <string name="gender_metal">Metal</string>
+    <string name="gender_hiphop">Hip Hop</string>
+
+    <!-- Settings screen various labels -->
+    <string name="settings_category_user">User\'s Preferences</string>
+    <string name="settings_category_store">Store\'s Preferences</string>
+    <string name="settings_category_playlist">Playlists:</string>
+    <string name="settings_button_playlist">Manage Playlists</string>
+    <string name="settings_check_repeat">Auto repeat</string>
+    <string name="settings_check_random">Random sort</string>
+    <string name="settings_category_equalizer">Equalizer:</string>
+    <string name="settings_category_account">User account:</string>
+    <string name="settings_category_payment">Payment method:</string>
+    <string name="settings_button_signin">Sign in</string>
+    <string name="settings_button_signon">Sign on</string>
+    <string name="settings_button_payment">Add a new payment</string>
+    <string name="settings_radio_payment1">VISA ending 1234</string>
+    <string name="settings_radio_payment2">Mastercard ending 5678</string>
+    <string name="settings_radio_payment3">Prepaid code ending 9AB8</string>
+
+    <!-- Challenges and screens labels -->
+    <string name="label_main">Main Screen</string>
+    <string name="label_store">App Store</string>
+    <string name="label_library">Music Library</string>
+    <string name="label_player">Music Player</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_purchase">Store Payment</string>
+
+    <!-- Challenges descriptions -->
+    <string name="description_main">
+        \tThis is the app main screen.\n\n
+        \tIn top screen, it should be loaded some music offers represented by its official album cape from
+        app store according to user preferences. When user clicks a music, it should be redirected to the
+        app store page with info about the song, album and purchase options.\n\n
+        \tIn middle screen, it should be loaded some images of music albums front capes from most played user\'s albuns that was purchased
+        and downloaded in phone\'s storage. Each click on album lead to a new screen listing all musics from that album.\n\n
+        \tIn botton screen, it should be loaded the last music played by user with controls to start, stop or pause music, if it
+        was the case, or option to go to a new screen to browse library where he can choose a music to play from internal storage.\n\n
+        \tThis screen should have a side scroll menu accessed by dragging screen from right edge with direct option to access
+        app store new music releases, app store most played musics, app store main page, browse internal phone library
+        and adjust the app settings.\n\n
+        \tFinally, on top right screen, it should contain a magnifying glass icon to allow user search for a specified
+        music, author or album either in local library as store library.\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - To retrieve album capes from server, I believe we can use HttpUrlConnection class to establish web
+        connection and use JsonObject class to parse JSON data from server with data of new album releases.\n\n
+        - To retrieve album capes from phone storage, we can use File and FileOutputStream classes to access phone storage and retrive
+        image files associated to local music files. I believe the search function can use these classes as well.\n\n
+        - There\'s an artcle on Android Developer website that teaches to display bitmaps efficiently with BitmapFactory,
+        AsyncTask and LruCache classes, so we can use them to decrease image processing and implement cache.\n\n
+        - To load and play a music file we can use MediaPlayer class.\n\n
+        - The side menu can be implemented with DrawerLayout and Fragment classes.\n\n
+    </string>
+
+    <string name="description_store">
+        \tThis is the app store screen.\n\n
+        \tTo access store, user should create a new account or sign in with an existent one.\n\n
+        \tThe store screen should have a top scrolling horizontal menu with some main categories like \"Top Songs\", \"New Releases\",
+        \"Genders\", etc., to encourage user to purchase new songs. Each click in a category loads a corresponding list of songs or albums
+        (and its image capes) right in bottom of menu.\n\n
+        \tEach click in a song or album from lists above should load more details like author, complete album description, year, users
+        ratings, etc., and option to purchase the music (or album) or play it if it was previously purchased and it is in phone storage.\n\n
+        \tIn top screen, it should have a text area to user search for musics or composers (which results loads as a list in same area of
+        categories lists above) and a button to open the settings and a button to close store and return to main app acreen.\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - To implement sign on / sign in, we can use Google Services and Google Play Services plugins, get a configuration file for app
+        from Google Developers and get a backend server\'s OAuth 2.0 client ID. After that, we can use GoogleSignInOptions and GoogleApiClient
+        classes to implement sign on / in methods.\n\n
+        - Like Main Screen, we can use HttpUrlConnection and JsonObject classes to parse server data and build the categories and search lists.
+        The lists can be implemented in ListViews with ArrayAdapters to save phone resources.\n\n
+        - The top menu can be implemented with ViewPager and Fragments to allow side navigation among lists.\n\n
+        - All server response data should be implented with REST API to allow the app to do all data queries needed.\n\n
+        - When user is seeing details about a song or album, he can purchase it clicking in a specified buttom that leads him to the
+        store payment screen.\n\n
+        - If user have already purchased the song, the button above allow user to play the song (loading the player) or download the song
+        if it can\'t be found in phone storage. Again, like Main Screen, we can use File, FileOutputStream and MediaPlayer classes to
+        search the song and play it if found. In case of download, we can use HttpUrlConnection and InputStream classes to request file from
+        server and save it in phone storage with File and FileOutputStream classes.\n\n
+    </string>
+
+    <string name="description_library">
+        \tThis is the app library screen.\n\n
+        \tIt should display a list of songs presented in phone storage.\n\n
+        \tThe list should display only album names or music files where song name and composer are displayed. It also should display the
+        corresponding image capes and total lenght.\n\n
+        \tWhen user click on an album, it should list all corresponding songs. And when a song is clicked, it should start playing on music
+        player.\n\n
+        \tEach item on lists above, will have an icon in most right position that allow user to add the item to a playlist. If it\'s an album,
+        then all songs will be add to playlist.\n\n
+        \tIn top right screen, it should contain a magnifying glass icon to allow user search for a specified
+        music, author or album either in local library and a button to open the settings.\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - Like Main Screen, we can use File and FileOutputStream classes to access phone storage and retrive songs, album folders and image files
+        associated to local music files. I believe the search function can use these classes as well.\n\n
+        - The lists can be implemented in ListViews with ArrayAdapters to save phone resources.\n\n
+        - To load and play a music file we can use MediaPlayer class.\n\n
+        - Music playlists can be saved as key-values sets with SharedPreferences API or as text files using File and FileOutputStream classes.\n\n
+    </string>
+
+    <string name="description_player">
+        \tThis is the app player screen.\n\n
+        \tIt should display a large image on top od screen associated to music is playing.\n\n
+        \tIn botton of screen, it should display the name, composer and album of song is playing, current and total time of song and a sliding control
+        to skip parts of song. Finally, buttons to play, pause, stop and skip songs and buttons to manage playlists and others settings.\n\n
+        \tIn top screen, it should have a \'Back\' button to return to previous screen (Main, Store or Library).\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - Like Main Screen, we can use File and FileOutputStream classes to access phone storage, prepare desired music to play and retrieve image and
+        informations associated to current music file.\n\n
+        - We can use MediaPlayer class to implement all music methods required (play, pause, stop, skip)\n\n
+    </string>
+
+    <string name="description_settings">
+        \tThis is the app settings screen.\n\n
+        \tIt should present a list of controls to set a variety of app and user settings like:\n
+        - User account data\n
+        - Gender preferences\n
+        - Manage Playlists\n
+        - Lists visualizations\n
+        - etc\n\n
+        \tIn top screen, it should have a \'Back\' button to return to previous screen (Main, Store, Library or Player).\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - Settings can be saved as key-values sets with SharedPreferences API that are kept and restored when app is reloaded.\n\n
+    </string>
+
+    <string name="description_purchase">
+        \tThis is the app store payment screen.\n\n
+        \tIt should present the price and a button to user confirm the purchase with a valid payment method (credit card, pre paid code, etc) or
+        present an option to user add a valid payment method to conclude the purchase (all managed by Google Play API). There should be an button to
+        user cancel the purchase.\n\n
+        \tAfter user action, the app should return to previous screen (song or album detais in store). In case of purchase, the music or album should
+        start downloading immediately.\n\n
+        ---------------------------\n\n
+        \tPOSSIBLE SOLUTIONS:\n\n
+        - To implement in-app purchases, we can use In-app Billing API from Google Play Services to intermediate payment requests from app store.
+        We need to prepare the app to support this API by setting Billing permision on Manifest XML, create a populated product list (musics and
+        albums) on Developer\'s Console account where each item will have an unique SKU code. After that, the app can send a isBillingSupported request
+        to Google Play to do an initial handshake, send a getPurchases method to get previous user purchases, send a getSkuDetais to request details of
+        the in-app products and finally send a getBuyIntent request to initiate a purchase. After payment, the app can check if transaction was successful
+        and allow the download.\n\n
+    </string>
+</resources>

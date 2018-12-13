@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Dimensions for varios screen views -->
+    <dimen name="main_player_padding">8dp</dimen>
+    <dimen name="main_player_margin">4dp</dimen>
+    <dimen name="player_album_height">250dp</dimen>
+    <dimen name="player_button_size">40dp</dimen>
+    <dimen name="purchase_image_size">110dp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- values for gender spinners on store and settings screens -->
+    <string-array name="gender">
+        <item name="rock">@string/gender_rock</item>
+        <item name="pop">@string/gender_pop</item>
+        <item name="latin">@string/gender_latin</item>
+        <item name="classical">@string/gender_classical</item>
+        <item name="country">@string/gender_country</item>
+        <item name="electronic">@string/gender_electronic</item>
+        <item name="metal">@string/gender_metal</item>
+        <item name="hiphop">@string/gender_hiphop</item>
+    </string-array>
+</resources>
