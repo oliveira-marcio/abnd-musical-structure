@@ -20,4 +20,4 @@ Também foi realizado um breve estudo sobre uma possível implementação da [In
 
 ## Copyright
 
-Esse projeto foi desenvolvido por Márcio Souza de Oliveira.
+Esse projeto foi desenvolvido por Márcio Souza de Oliveira em 26/09/2016.
